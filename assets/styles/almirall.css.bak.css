@@ -1,23 +1,15 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'Myriad Pro';
+    font-family: 'ModestumLight';
     src: url('../fonts/MyriadPro-Light.woff2') format('woff2');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadPro-Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Myriad Pro';
+    font-family: 'Modestum';
     src: url('../fonts/MyriadPro-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -96,51 +88,27 @@ a {
 /* Estructura 
 -------------*/
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 html {
 	overflow-y:scroll;
 	}
 
 body {
-	font-family: 'Myriad Pro';
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Modestum',Arial,sans-serif;
 	color: #333;
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 1.5em;
 	font-weight: normal;
 }
 
 #embolcall {
 	width: 960px;
-	/* margin: 25px auto 10px auto; */
-	margin: 0 auto;
+	margin: 25px auto 10px auto;
 	padding: 0 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-	min-height: 100%;
 }
 
-header#cap, .embolcall-cos, footer#peu {
+#cap {
+	float: left;
 	width: 100%;
-}
-
-header#cap {
-	padding-top: 25px;
-}
-
-.embolcall-cos {
-	flex: 1;
-}
-
-footer#peu {
-	padding-bottom: 15px;
 }
 
 div#logo {
@@ -164,7 +132,8 @@ div#sel-lleng {
 }
 
 div#contingut {
-	margin: 60px 0 10px 0;
+	margin: 60px 0 100px 0;
+	min-height: 500px;
 	float: left;
 }
 
@@ -187,14 +156,20 @@ div.contingut-entrada {
 	width: 160px;
 }
 
+.embolcall-cos {
+	width: 100%;
+	float: left;
+	margin-bottom: 0px;
+}
+
 /* Tancaments */
-div#logo:after, nav#embolcall-menu:after, div#contingut:after,
-div.contingut-entrada:after, #lateral:after, 
+#cap:after, div#logo:after, nav#embolcall-menu:after, div#contingut:after,
+div.contingut-entrada:after, #lateral:after, #embolcall:after, 
 .contenidor-imatge:after, .navegacio-imatge:after, .endavant:after, 
 .enrere:after, .comptador:after, .embolcall-fletxes:after,
 .formulari:after, div.embolcall-entrada-arxiu:after, .embolcall-exposicio:after,
 .embolcall-imatge-exposicio:after, .embolcall-text-exposicio:after,
-.embolcall-graella:after {
+.embolcall-graella:after, .embolcall-cos:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -246,13 +221,13 @@ ul#nav li a:hover {
 }
 
 h1#nom, ul#menu {
-	font-size: 13px;
+	font-size: 12px;
 }
 
 h1#nom a {
-	font-family: 'Myriad Pro';
-    font-weight: 600;
-    font-style: normal;
+	/* letter-spacing: 0.9px; */
+	font-weight: 600;
+	font-style: normal;
 }
 
 h1#nom a {
@@ -305,9 +280,7 @@ ul#llenguatge.pagina-inici li.ultim {
 }
 
 h1.titol-entrada, #lateral h2 {
-	font-family: 'Myriad Pro';
-	font-weight: 300;
-	font-style: normal;
+	font-family: 'ModestumLight',Arial,sans-serif;
 	font-size: 18px;
 	color: #999999;
 	letter-spacing: 0.1em;
@@ -383,6 +356,12 @@ p.publicat, p.publicat a, span.publicat, span.publicat a {
 	color: #333;
 }
 
+#peu {
+	width: 100%;
+	margin-bottom: 0;
+	float: left;
+}
+
 p.copyright {
 	color: #999;
 	line-height: normal;
@@ -394,7 +373,6 @@ p.copyright {
 .diapos {
 	position:relative;
 	margin-top: 100px;
-	align-self: center;
 	height: 480px;
 	}
 
@@ -408,9 +386,7 @@ p.copyright {
 	}
 
 .diapos h2 {
-	font-family: 'Myriad Pro';
-	font-weight: 300;
-    font-style: normal;
+	font-family: 'ModestumLight',Arial,sans-serif;
 	letter-spacing: 0.05em;
 	margin-top: 20px;
 	color: #999999;
@@ -554,6 +530,53 @@ ul.page-numbers li a.prev {
 .info-quadro h2 {
 	margin: 0 0 5px 0;
 	text-transform: uppercase;
+}
+
+/* Formulari de contacte */
+div.formulari h4 {
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 10px;
+}
+
+#fcontacte .bloc {
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#fcontacte label {
+	margin-top: 5px;
+	float: left;
+	width: 80px;
+	font-size: 12px;
+}
+
+#fcontacte .input {
+	float: right;
+	width: 400px;
+}
+
+#fcontacte input.text {
+	width: 200px;
+}
+
+#fcontacte input.text.llarg, #fcontacte textarea {
+	width: 300px;
+}
+
+#fcontacte input.text, #fcontacte textarea {
+	padding: 2px;
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	border-top: 1px #E2E2E2 solid;
+	border-left: 1px #E2E2E2 solid;
+	border-bottom: 1px #EEEEEE solid;
+	border-right: 1px #EEEEEE solid;
+}
+
+#fcontacte .error input.text, #fcontacte .error textarea {
+	border: 1px solid #CC0000;
 }
 
 div.destacat {
