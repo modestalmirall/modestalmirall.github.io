@@ -1,99 +1,114 @@
 <!doctype html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="google" value="notranslate">
-
-	<title>Modest Almirall | Página de artista</title>
-	
-	<link rel="stylesheet" href="/assets/styles/almirall.css">
-
-	<script src='/assets/js/jquery.min.js'></script>
-<script src='/assets/js/menu.js'></script>
-	
-	<link rel="icon" href="/favicon.ico" sizes="any">
-	<link rel="icon" href="/icon.svg" type="image/svg+xml">	
-</head>
-<body>
-<div id="embolcall">
-	<header id="cap"> 
-	<div id="logo">
-		<hgroup> 
-		<h1 id="nom">
-			<a href="/es">Modest Almirall</a> 
-		</h1>
-		</hgroup> 
-	</div>
-
-	<div id="embolcall-menu">
-		<ul id="menu">
-						<li><span>Menú</span>
-			<nav role="navigation">
-			<ul id="nav">
-					<li> <a href="/es/obras/"> Obras </a> </li>
-					<li> <a href="/es/exposiciones/"> Exposiciones </a> </li>
-					<li> <a href="/es/prensa/"> Prensa </a> </li>
-					<li> <a href="/es/curriculum/"> Currículum </a>
-					<li> <a href="/es/contacto/">Contacto</a> </li>
-									
-			</ul>
-			</nav>
-			</li>
-		</ul>
-	</div>
-	<div id="sel-lleng">
-		<ul id="llenguatge" class="pagina-inici">
-		<li class="primer"><a href="/ca/">ca</a></li>
-<li class="actiu">es</li>
-<li><a href="/fr/">fr</a></li>
-<li><a href="/en/">en</a></li>
-<li class="ultim"><a href="/de/">de</a></li>
-		</ul>
-	</div>
-	</header>
-	<div class="embolcall-cos"> 
-<div id="contingut" role="main">
-    
-    	<div class="diapos">
-    	 			<div>
- 				<img src="/assets/media/Goethe.jpg" alt="Goethe vs Newton" />
- 				<h2>Goethe vs Newton<br /><span>(detalle)</span></h2>
- 			</div>
-		 			<div>
- 				<img src="/assets/media/flor.jpg" alt="Amb la de l'Aston Martin" />
- 				<h2>Amb la de l'Aston Martin<br /><span>(detalle)</span></h2>
- 			</div>
-		 			<div>
- 				<img src="/assets/media/Mike-J-1.jpg" alt="Qué tiene Mick Jagger que no tenga yo" />
- 				<h2>Qué tiene Mick Jagger que no tenga yo<br /><span>(detalle)</span></h2>
- 			</div>
-		 			<div>
- 				<img src="/assets/media/Mike-J.jpg" alt="Qué tiene Mick Jagger que no tenga yo" />
- 				<h2>Qué tiene Mick Jagger que no tenga yo<br /><span>(detalle)</span></h2>
- 			</div>
-		 			<div>
- 				<img src="/assets/media/daus.jpg" alt="A una sola tirada" />
- 				<h2>A una sola tirada<br /><span>(detalle)</span></h2>
- 			</div>
-		
-	</div> 
-	
-</div>
-</div>
-<footer id="peu">
-<p class="copyright">Copyright © 1992&mdash;<span id="_any_"></span> Modest Almirall. Reservados todos los derechos.</p>
-</footer>
-</div>
-<script>
-$(window).load(function() {
-	$('.diapos > div:first-child').appendTo('.diapos').show();
-	setInterval(function() {
-		$('.diapos > div:first-child').hide().appendTo('.diapos').fadeIn(1000);
-	}, 4000);
-});
-</script>
-<script>
-    document.getElementById("_any_").innerHTML = new Date().getFullYear();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google" value="notranslate" />
+    <title>Modest Almirall | Página de artista</title>
+    <link rel="stylesheet" href="/assets/styles/almirall.css" />
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/menu.js"></script>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div id="embolcall">
+      <header id="cap">
+        <div id="logo">
+          <hgroup>
+            <h1 id="nom">
+              <a href="/es">Modest Almirall</a>
+            </h1>
+          </hgroup>
+        </div>
+        <div id="embolcall-menu">
+          <ul id="menu">
+            <li>
+              <span>Menú</span>
+              <nav role="navigation">
+                <ul id="nav">
+                  <li><a href="/es/obras/"> Obras </a></li>
+                  <li><a href="/es/exposiciones/"> Exposiciones </a></li>
+                  <li><a href="/es/prensa/"> Prensa </a></li>
+                  <li><a href="/es/curriculum/"> Currículum </a></li>
+                  <li><a href="/es/contacto/">Contacto</a></li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+        </div>
+        <div id="sel-lleng">
+          <ul id="llenguatge" class="pagina-inici">
+            <li class="primer"><a href="/ca/">ca</a></li>
+            <li class="actiu">es</li>
+            <li><a href="/fr/">fr</a></li>
+            <li><a href="/en/">en</a></li>
+            <li class="ultim"><a href="/de/">de</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="embolcall-cos">
+        <div id="contingut" role="main">
+          <div class="diapos">
+            <div>
+              <img src="/assets/media/Goethe.jpg" alt="Goethe vs Newton" />
+              <h2>Goethe vs Newton<br /><span>(detalle)</span></h2>
+            </div>
+            <div>
+              <img
+                src="/assets/media/flor.jpg"
+                alt="Amb la de l'Aston Martin"
+              />
+              <h2>Amb la de l'Aston Martin<br /><span>(detalle)</span></h2>
+            </div>
+            <div>
+              <img
+                src="/assets/media/Mike-J-1.jpg"
+                alt="Qué tiene Mick Jagger que no tenga yo"
+              />
+              <h2>
+                Qué tiene Mick Jagger que no tenga yo<br /><span
+                  >(detalle)</span
+                >
+              </h2>
+            </div>
+            <div>
+              <img
+                src="/assets/media/Mike-J.jpg"
+                alt="Qué tiene Mick Jagger que no tenga yo"
+              />
+              <h2>
+                Qué tiene Mick Jagger que no tenga yo<br /><span
+                  >(detalle)</span
+                >
+              </h2>
+            </div>
+            <div>
+              <img src="/assets/media/daus.jpg" alt="A una sola tirada" />
+              <h2>A una sola tirada<br /><span>(detalle)</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="peu">
+        <p class="copyright">
+          Copyright © 1992&mdash;<span id="_any_"></span> Modest Almirall.
+          Reservados todos los derechos.
+        </p>
+      </footer>
+    </div>
+    <script>
+      $(window).load(function () {
+        $(".diapos > div:first-child").appendTo(".diapos").show();
+        setInterval(function () {
+          $(".diapos > div:first-child")
+            .hide()
+            .appendTo(".diapos")
+            .fadeIn(1000);
+        }, 4000);
+      });
+    </script>
+    <script>
+      document.getElementById("_any_").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
 </html>
