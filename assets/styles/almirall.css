@@ -323,22 +323,19 @@ ul#nav li a:hover {
   color: #333;
 }
 
-h1#nom,
+div#logo,
 ul#menu {
   font-size: 13px;
 }
 
-h1#nom a {
+div#logo a {
   font-family: "Myriad Pro";
   font-weight: 600;
   font-style: normal;
-}
-
-h1#nom a {
   color: #333;
 }
 
-h1#nom a:hover {
+div#logo a:hover {
   color: #999;
 }
 
