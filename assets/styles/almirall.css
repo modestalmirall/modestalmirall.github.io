@@ -72,7 +72,7 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #333;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -225,7 +225,7 @@ ul#nav li a:hover {
 
 div#logo,
 ul#menu {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 div#logo a {
