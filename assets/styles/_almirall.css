@@ -1,109 +1,43 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro-Light.woff2") format("woff2");
+  font-family: "mp";
+  src: url("../fonts/mpl.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro-Semibold.woff2") format("woff2");
+  font-family: "mp";
+  src: url("../fonts/mps.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2");
+  font-family: "mp";
+  src: url("../fonts/mwp.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
+/* Reset de CSS */
+
+* {
   margin: 0;
-  outline: 0;
   padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
   vertical-align: baseline;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
-:focus {
-  outline: 0;
-}
-
-body {
-  background: #fff;
+a {
+  text-decoration: none;
 }
 
 ol,
@@ -112,53 +46,15 @@ ul {
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
-}
-
-caption,
-th,
-td {
-  font-weight: normal;
-  text-align: left;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-}
-
-blockquote,
-q {
-  quotes: "" "";
 }
 
 a img {
   border: 0;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Estructura 
--------------*/
+/* Definició d'estils */
 
 html,
 body {
@@ -171,12 +67,19 @@ html {
 }
 
 body {
-  font-family: "Myriad Pro";
+  background: #fff;
+  font-family: "mp";
   font-weight: normal;
   font-style: normal;
   color: #333;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #embolcall {
@@ -279,9 +182,6 @@ div.embolcall-entrada-arxiu:after,
   visibility: hidden;
 }
 
-/* Menú 
--------*/
-
 ul#menu {
   position: relative;
   text-transform: lowercase;
@@ -325,11 +225,10 @@ ul#nav li a:hover {
 
 div#logo,
 ul#menu {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 div#logo a {
-  font-family: "Myriad Pro";
   font-weight: 600;
   font-style: normal;
   color: #333;
@@ -386,11 +285,10 @@ ul#llenguatge.pagina-inici li.ultim {
 
 h1.titol-entrada,
 #lateral h2 {
-  font-family: "Myriad Pro";
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
-  color: #999999;
+  color: #999;
   letter-spacing: 0.1em;
   margin-bottom: 65px;
   text-transform: lowercase;
@@ -480,8 +378,6 @@ p.copyright {
   line-height: normal;
 }
 
-/* Banner diapositives
----------------------- */
 .diapos {
   position: relative;
   margin-top: 100px;
@@ -499,12 +395,11 @@ p.copyright {
 }
 
 .diapos h2 {
-  font-family: "Myriad Pro";
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.05em;
   margin-top: 20px;
-  color: #999999;
+  color: #999;
   font-size: 30px;
   text-align: right;
 }
@@ -513,9 +408,6 @@ p.copyright {
   font-size: 15px;
   color: #666;
 }
-
-/* Graella galeria 
------------------- */
 
 #embolcall-graella {
   width: 615px;
@@ -540,7 +432,6 @@ p.copyright {
   opacity: 0.6;
 }
 
-/* Image.php */
 .contenidor-imatge {
   float: left;
   width: 600px;
@@ -604,7 +495,6 @@ ul.page-numbers li a.next {
   color: #999;
 }
 
-/* Paginacio */
 ul.page-numbers {
   list-style: none;
   padding-top: 4px;
@@ -665,11 +555,10 @@ div.destacat {
 
 div.destacat p {
   padding-bottom: 0;
-  color: #999999;
+  color: #999;
   font-size: 18px;
 }
 
-/* Exposicions */
 div.embolcall-exposicio {
   width: 500px;
   margin-bottom: 50px;
@@ -736,7 +625,6 @@ p.adreca-galeria.contacte {
   color: #333;
 }
 
-/* Currículum */
 table.curriculum {
   /* margin-top: -40px; */
   position: relative;
@@ -767,8 +655,6 @@ div.mosca {
   background-repeat: no-repeat;
 }
 
-/* Barra desplaçament */
-
 html::-webkit-scrollbar {
   width: 11px;
 }
@@ -790,8 +676,6 @@ html::-webkit-scrollbar-thumb {
   -webkit-border-radius: 6px;
   border: 3px solid #fff;
 }
-
-/* SLIMBOX */
 
 #lbOverlay {
   position: fixed;
