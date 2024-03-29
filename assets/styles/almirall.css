@@ -678,6 +678,7 @@ table.curriculum th {
 }
 
 table.curriculum td.any {
+  min-width: 100px;
   padding-right: 10px;
   text-align: right;
 }
