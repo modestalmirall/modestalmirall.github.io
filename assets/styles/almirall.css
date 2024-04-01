@@ -103,7 +103,7 @@ body {
   font-style: normal;
   color: #333;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -324,7 +324,7 @@ h1.titol-entrada,
 div.contingut-entrada p,
 div.embolcall-entrada-arxiu p {
   padding-bottom: 1em;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 div.embolcall-entrada-arxiu {
@@ -402,7 +402,7 @@ span.publicat a {
 
 p.copyright {
   color: #999;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 /* Banner diapositives */
@@ -775,7 +775,7 @@ html::-webkit-scrollbar-thumb {
   font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
   font-size: 10px;
   color: #666;
-  line-height: 1.4em;
+  line-height: 1.3;
   text-align: left;
   border: 10px solid #fff;
   border-top-style: none;
