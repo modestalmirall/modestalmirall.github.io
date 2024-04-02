@@ -315,7 +315,7 @@ h1.titol-entrada,
   font-weight: 300;
   font-style: normal;
   font-size: 24px;
-  color: #999999;
+  color: #999;
   letter-spacing: 0.05em;
   margin-bottom: 65px;
   text-transform: lowercase;
@@ -427,7 +427,7 @@ p.copyright {
   font-style: normal;
   letter-spacing: 0.05em;
   margin-top: 20px;
-  color: #999999;
+  color: #999;
   font-size: 30px;
   text-align: right;
 }
@@ -587,7 +587,7 @@ div.destacat {
 
 div.destacat p {
   padding-bottom: 0;
-  color: #999999;
+  color: #999;
   font-size: 18px;
 }
 
