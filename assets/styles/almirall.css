@@ -419,7 +419,7 @@ p.copyright {
   left: 0;
   top: 0;
   background-color: #fff;
-  height: 480px;
+  /* height: 480px; */
 }
 
 .diapos h2 {
