@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ca" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <title>Modest Almirall | Pàgina d&#039;artista</title>
+    <link rel="stylesheet" href="/assets/styles/almirall.css">
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/menu.js"></script>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div id="embolcall">
+      <header id="cap">
+        <div id="logo">
+          <a href="/ca">Modest Almirall</a>
+        </div>
+        <div id="embolcall-menu">
+          <ul id="menu">
+            <li>
+              <span>Menú</span>
+              <nav>
+                <ul id="nav">
+                  <li><a href="/ca/obres/">Obres</a></li>
+                  <li><a href="/ca/exposicions/">Exposicions</a></li>
+                  <li><a href="/ca/premsa/">Premsa</a></li>
+                  <li><a href="/ca/curriculum/">Currículum</a></li>
+                  <li><a href="/ca/contacte/">Contacte</a></li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+        </div>
+        <div id="sel-lleng">
+          <ul id="llenguatge" class="pagina-inici">
+            <li class="primer actiu">ca</li>
+            <li><a href="/es/">es</a></li>
+            <li><a href="/fr/">fr</a></li>
+            <li><a href="/en/">en</a></li>
+            <li class="ultim"><a href="/de/">de</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="embolcall-cos">
+        <div id="contingut" role="main">
+          <div class="diapos">
+            <div>
+              <img src="/assets/media/seda.jpg" alt="No me percaté de la seda">
+              <h2>No me percaté de la seda<br><span>(detall)</span></h2>
+            </div>
+            <div>
+              <img src="/assets/media/amor.jpg" alt="No te preocupes mi amor, a las 9 estaré en casa">
+              <h2>No te preocupes mi amor, a las 9 estaré en casa<br><span>(detall)</span></h2>
+            </div>
+            <div>
+              <img src="/assets/media/daus.jpg" alt="A una sola tirada">
+              <h2>A una sola tirada<br><span>(detall)</span></h2>
+            </div>
+            <div>
+              <img src="/assets/media/Svetlana.jpg" alt="La il·lusió de Svetlana II">
+              <h2>La il·lusió de Svetlana II<br><span>(detall)</span></h2>
+            </div>
+            <div>
+              <img src="/assets/media/Mike-J.jpg" alt="Qué tiene Mick Jagger que no tenga yo">
+              <h2>Qué tiene Mick Jagger que no tenga yo<br><span>(detall)</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="peu">
+        <p class="copyright">Copyright © 1992&mdash;<span id="_any_"></span> Modest Almirall. Reservats tots els drets.</p>
+      </footer>
+    </div>
+    <script>
+      $(window).load(function () {
+        $(".diapos > div:first-child").appendTo(".diapos").show();
+        setInterval(function () {
+          $(".diapos > div:first-child").hide().appendTo(".diapos").fadeIn(1000);
+        }, 4000);
+      });
+    </script>
+    <script>
+      document.getElementById("_any_").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
