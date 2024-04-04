@@ -489,7 +489,6 @@ p.copyright {
   float: right;
 }
 
-/*
 .endavant a,
 .enrere a {
   display: block;
@@ -518,8 +517,6 @@ ul.page-numbers li a.next {
   float: left;
   background-position: -2px 0;
 }
-
-*/
 
 .embolcall-fletxes {
   margin: 5px 0 5px 15px;
@@ -556,7 +553,6 @@ ul#page-numbers li.current {
   color: #333;
 }
 
-/*
 ul.page-numbers li a.next,
 ul.page-numbers li a.prev {
   width: 13px;
@@ -569,7 +565,6 @@ ul.page-numbers li a.next {
 ul.page-numbers li a.prev {
   background-position: -2 0;
 }
-*/
 
 .info-quadro {
   width: 600px;
