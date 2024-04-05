@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.woff2$
+Disallow: /*.css$
+Allow: /
