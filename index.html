@@ -1,87 +1,37 @@
-<!doctype html>
-<html lang="ca" translate="no">
-  <head>
-    <meta charset="utf-8">
-    <meta name="google" value="notranslate">
-    <title>Modest Almirall | Pàgina d&#039;artista</title>
-    <link rel="stylesheet" href="/assets/styles/almirall.css">
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/menu.js"></script>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  </head>
-  <body>
-    <div id="embolcall">
-      <header id="cap">
-        <div id="logo">
-            <a href="/ca">Modest Almirall</a>
-        </div>
-        <div id="embolcall-menu">
-          <ul id="menu">
-            <li>
-              <span>Menú</span>
-              <nav>
-                <ul id="nav">
-                  <li><a href="/ca/obres/">Obres</a></li>
-                  <li><a href="/ca/exposicions/">Exposicions</a></li>
-                  <li><a href="/ca/premsa/">Premsa</a></li>
-                  <li><a href="/ca/curriculum/">Currículum</a></li>
-                  <li><a href="/ca/contacte/">Contacte</a></li>
-                </ul>
-              </nav>
-            </li>
-          </ul>
-        </div>
-        <div id="sel-lleng">
-          <ul id="llenguatge" class="pagina-inici">
-            <li class="primer actiu">ca</li>
-            <li><a href="/es/">es</a></li>
-            <li><a href="/fr/">fr</a></li>
-            <li><a href="/en/">en</a></li>
-            <li class="ultim"><a href="/de/">de</a></li>
-          </ul>
-        </div>
-      </header>
-      <div class="embolcall-cos">
-        <div id="contingut" role="main">
-          <div class="diapos">
-            <div>
-              <img src="/assets/media/Svetlana.jpg" alt="La il·lusió de Svetlana II">
-              <h2>La il·lusió de Svetlana II<br><span>(detall)</span></h2>
-            </div>
-            <div>
-              <img src="/assets/media/amor.jpg" alt="No te preocupes mi amor, a las 9 estaré en casa">
-              <h2>No te preocupes mi amor, a las 9 estaré en casa<br><span>(detall)</span></h2>
-            </div>
-            <div>
-              <img src="/assets/media/Mike-J-1.jpg" alt="Qué tiene Mick Jagger que no tenga yo">
-              <h2>Qué tiene Mick Jagger que no tenga yo<br><span>(detall)</span></h2>
-            </div>
-            <div>
-              <img src="/assets/media/flor.jpg" alt="Amb la de l'Aston Martin">
-              <h2>Amb la de l'Aston Martin<br><span>(detall)</span></h2>
-            </div>
-            <div>
-              <img src="/assets/media/Mike-J.jpg" alt="Qué tiene Mick Jagger que no tenga yo">
-              <h2>Qué tiene Mick Jagger que no tenga yo<br><span>(detall)</span></h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer id="peu">
-        <p class="copyright">Copyright © 1992&mdash;<span id="_any_"></span> Modest Almirall. Reservats tots els drets.</p>
-      </footer>
-    </div>
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecció segons idioma</title>
     <script>
-      $(window).load(function () {
-        $(".diapos > div:first-child").appendTo(".diapos").show();
-        setInterval(function () {
-          $(".diapos > div:first-child").hide().appendTo(".diapos").fadeIn(1000);
-        }, 4000);
-      });
+        // Funció per redirigir segons l'idioma del navegador
+        function redirigirSegonsIdioma() {
+            // Obtindre l'idioma del navegador del client
+            var idiomaUsuari = navigator.language || navigator.userLanguage;
+
+            // Redirecció segons l'idioma
+            if (idiomaUsuari.startsWith("ca")) {
+                window.location.href = "/ca"; // Redirigir a la versió en català
+            } else if (idiomaUsuari.startsWith("es")) {
+                window.location.href = "/es"; // Redirigir a la versió en espanyol
+            } else if (idiomaUsuari.startsWith("fr")) {
+                window.location.href = "/fr"; // Redirigir a la versió en francès
+            } else if (idiomaUsuari.startsWith("en")) {
+                window.location.href = "/en"; // Redirigir a la versió en anglès
+            } else if (idiomaUsuari.startsWith("de")) {
+                window.location.href = "/de"; // Redirigir a la versió en alemany
+            } else {
+                // Si no es detecta cap dels idiomes anteriors, redirigir a una pàgina predeterminada
+                window.location.href = "/en"; 
+            }
+        }
+
+        // Trucar a la funció de redirecció quan es carrega la pàgina
+        window.onload = redirigirSegonsIdioma;
     </script>
-    <script>
-      document.getElementById("_any_").innerHTML = new Date().getFullYear();
-    </script>
-  </body>
+</head>
+<body>
+</body>
 </html>
