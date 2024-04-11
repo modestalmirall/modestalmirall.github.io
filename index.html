@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <script>
         // Funció per redirigir segons l'idioma del navegador
         function redirigirSegonsIdioma() {
-            // Obtindre l'idioma del navegador del client
+            // Obtenir l'idioma del navegador del client
             var idiomaUsuari = navigator.language || navigator.userLanguage;
 
             // Redirecció segons l'idioma
@@ -24,14 +25,16 @@
                 window.location.href = "/de"; // Redirigir a la versió en alemany
             } else {
                 // Si no es detecta cap dels idiomes anteriors, redirigir a una pàgina predeterminada
-                window.location.href = "/en"; 
+                window.location.href = "/en";
             }
         }
 
-        // Trucar a la funció de redirecció quan es carrega la pàgina
+        // Cridar la funció de redirecció quan es carrega la pàgina
         window.onload = redirigirSegonsIdioma;
     </script>
 </head>
+
 <body>
 </body>
+
 </html>
