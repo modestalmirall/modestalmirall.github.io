@@ -1,0 +1,123 @@
+	html.menu div.menu {
+		right: 0; 
+		/* width: 20%; */
+	}
+
+	div.menu {
+		z-index: 900;
+		position: fixed;
+		right: -300px;
+		width: 300px;
+		height: 100%;
+		overflow-y: auto;
+		transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+		display: table;
+		background-color: var(--text);
+	}
+
+	div.menu>div {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 45px;
+	}
+
+	nav em {
+		font-style: normal;
+		font-weight: 500;
+		text-transform: lowercase;
+		color: var(--nota);
+		transition: all 0.9s cubic-bezier(0.835, 0, 0.19, 1);
+		transform: translateY(-800px);
+	}
+
+	html.menu nav em {
+		transform: translateY(0px);
+	}
+
+	/* Estil del separador */
+	
+	hr.separador {
+		display: block;
+		width: 61.8%;
+		margin: 40px auto;
+		height: 1px;
+		border-top: 1px solid var(--gris);
+	}
+	
+
+	/* Estil dels enllaços del menú */
+	nav ul a {
+		position: relative;
+		display: inline-block;
+		outline: none;
+		/* color: #fff; */
+		color: var(--fons);
+		text-decoration: none;
+		text-transform: lowercase;
+		font-size: 200%;
+		overflow: hidden;
+		line-height: 1.618em;
+		height: 1.618em;
+	}
+
+	nav ul a:hover,
+	nav ul a:focus {
+		outline: none;
+	}
+
+	nav ul a span {
+		/* font-weight: bold; */
+		position: relative;
+		display: inline-block;
+		transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	nav ul a span::before {
+		position: absolute;
+		top: 100%;
+		content: attr(data-hover);
+		color: #bbb;
+		transform: translate3d(0, 0, 0);
+	}
+
+	nav ul a:hover span,
+	nav ul a:focus span {
+		transform: translateY(-100%);
+	}
+
+	/* Animació dels elements del menú */
+	nav ul li {
+		list-style-type: none;
+		transform: translateX(50px) !important;
+		opacity: 0;
+		transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	html.menu nav ul li {
+		transform: translateX(0) !important;
+		opacity: 1;
+	}
+
+	nav ul li:nth-child(1) {
+		transition-delay: 0.08s;
+	}
+
+	nav ul li:nth-child(2) {
+		transition-delay: 0.16s;
+	}
+
+	nav ul li:nth-child(3) {
+		transition-delay: 0.24s;
+	}
+
+	nav ul li:nth-child(4) {
+		transition-delay: 0.32s;
+	}
+
+	nav ul li:nth-child(5) {
+		transition-delay: 0.40s;
+	}
+
+	nav ul li:nth-child(6) {
+		transition-delay: 0.48s;
+	}
