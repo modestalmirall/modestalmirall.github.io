@@ -12,7 +12,7 @@ document.getElementById("_any_").innerHTML = new Date().getFullYear();
 // slider
 document.addEventListener('DOMContentLoaded', function() {
   let currentImageIndex = 0;
-  const images = document.querySelectorAll('.background-slider img');
+  const images = document.querySelectorAll('.fonsPortada  img');
   const totalImages = images.length;
 
   function showNextImage() {
