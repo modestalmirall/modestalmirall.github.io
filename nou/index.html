@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/menu.css" />
   <link rel="stylesheet" href="css/fonsportada.css" />
   <link rel="stylesheet" href="css/barra.css" />
+  <link rel="stylesheet" href="css/provisional.css" />
+  
 
   <meta name="description" content="">
 
@@ -26,70 +28,6 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-  <style>
-    :root {
-      --fons: #fff;
-      --text: #222;
-      --gris: #888;
-      --nota: #f60;
-    }
-
-    /*
-    html {
-      overflow-y: scroll;
-    }
-    */
-
-    body {
-      background-color: var(--fons);
-      font: normal normal 13px/1.5 'Poppins';
-      color: var(--text);
-
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-    }
-
-    header {
-      min-height: 120px;
-      padding: 0 45px;
-      display: flex;
-      align-items: center;
-    }
-
-    a svg.monograma {
-      height: 30px;
-      width: auto;
-    }
-
-    a svg.monograma path.inicialM {
-      fill: var(--text);
-    }
-
-    a svg.monograma path.inicialA {
-      fill: var(--nota);
-    }
-
-    a:hover svg.monograma path.inicialM,
-    a:hover svg.monograma path.inicialA {
-      fill: var(--gris);
-      transition: all .3s ease;
-    }
-
-    /* header, */
-    div.contenidor,
-    footer {
-      padding: 33px 45px;
-    }
-
-    div.contenidor {
-      flex: 1;
-    }
-
-    footer {
-      color: var(--gris);
-    }
-  </style>
 </head>
 
 <body>
@@ -115,7 +53,7 @@
     </div>
   </div>
 
-  <header>
+  <header class="cap">
     <a href="#">
       <svg class="monograma" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 105 78" xmlns="http://www.w3.org/2000/svg">
         <path class="inicialM" d="m0 77.99 19.897-77.987 26.841-.003 4.86 18.635-13.59 53.202-4.788-18.35-6.156 24.513z" />
@@ -141,7 +79,7 @@
     </div>
 
   </div>
-  <footer>
+  <footer class="peu">
     © <span id="_any_"></span> Modest Almirall
   </footer>
 
