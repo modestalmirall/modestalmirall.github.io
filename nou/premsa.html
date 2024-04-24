@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/fonsportada.css" />
   <link rel="stylesheet" href="css/barra.css" />
   <link rel="stylesheet" href="css/provisional.css" />
+  <link rel="stylesheet" href="css/premsa.css" />
 
   <meta name="description" content="">
 
@@ -52,7 +53,7 @@
     </div>
   </div>
 
-  <header class="cap">
+  <header class="capPagina">
     <a href="#">
       <svg class="monograma" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 105 78" xmlns="http://www.w3.org/2000/svg">
         <path class="inicialM" d="m0 77.99 19.897-77.987 26.841-.003 4.86 18.635-13.59 53.202-4.788-18.35-6.156 24.513z" />
@@ -60,59 +61,6 @@
       </svg>
     </a>
   </header>
-
-  <style>
-    article.premsa {
-      width: 61.8%;
-      margin: 0 auto;
-    }
-
-    /*
-    article.premsa header,
-    article.premsa footer {
-      display: block;
-      padding: 0;
-    }
-*/
-    article.premsa h1 {
-      font-size: 250%;
-      font-weight: 300;
-      color: var(--nota);
-      margin-bottom: 1em;
-    }
-
-    article.premsa section.info p {
-      font-size: 90%;
-      padding: 0;
-    }
-
-    article.premsa section.contingut {
-      column-count: 2;
-      column-gap: 45px;
-    }
-
-    article.premsa section.contingut p {
-      font-size: 100%;
-      padding-bottom: 1.5em;
-    }
-
-    p.autor {
-      font-weight: 600;
-    }
-
-    p.mitja {
-      text-transform: uppercase;
-    }
-
-    article.premsa hr {
-      display: block;
-      width: 100%;
-      margin: 40px auto;
-      height: 1px;
-      border-top: 1px solid #ccc;
-    }
-  </style>
-
 
   <div class="contenidor">
 
@@ -126,10 +74,8 @@
           <p class="data">25 setembre 2009</p>
         </section>
         <hr />
-        <!--
-        <img src="media/relat-curt-vi.jpg">
+        <img class="motiuPremsa" src="media/relat-curt-vi.jpg">
         <hr />
-         -->
       </header>
 
       <section class="contingut">
@@ -140,79 +86,27 @@
 
       <hr />
 
-      <style>
-        .angles {
-          position: relative;
-          padding: 45px;
-        }
-
-        .angles::before,
-        .angles::after {
-          content: "";
-          position: absolute;
-          width: 45px;
-          height: 45px;
-        }
-
-        .angles::before {
-          top: 0;
-          left: 0;
-          border-top: 2px solid var(--nota);
-          border-left: 2px solid var(--nota);
-        }
-
-        .angles::after {
-          bottom: 0;
-          right: 0;
-          border-bottom: 2px solid var(--nota);
-          border-right: 2px solid var(--nota);
-        }
-        
-        h4 {
-          color: var(--nota);
-          font-size: 160%;
-          margin-bottom: 1em;
-        }
-        
-        ul.premsa {
-          font-size: 125%;
-        }
-        
-        ul.premsa li {
-          margin-bottom: .5em;
-        }
-        
-        ul.premsa li:last-child {
-          margin-bottom: 0;
-        }
-        
-        
-      </style>
-
       <footer>
-
-        <!-- <div class="angles"> -->
-          <h4>Altres artícles de premsa</h4>
-          <ul class="premsa">
-            <li><a href="">Diferència artística, a l’uníson</a></li>
-            <li><a href="">La vital importància de les coses mínimes</a></li>
-            <li><a href="">Bosque Blanco</a></li>
-            <li><a href="">Movimientos artísticos</a></li>
-            <li><a href="">La Fundación La Caixa muestra en Tarragona sus últimas adquisiciones</a></li>
-            <li><a href="">Las pequeñas y grandes dudas de Almirall</a></li>
-            <li><a href="">Modest Almirall</a></li>
-            <li><a href="">Una mirada en diagonal</a></li>
-            <li><a href="">Modest Almirall</a></li>
-            <li><a href="">Vegetales frescos</a></li>
-          </ul>
-        <!-- </div> -->
+        <h4>Altres articles de premsa</h4>
+        <ul class="premsa">
+          <li><a href="#">Diferència artística, a l’uníson</a></li>
+          <li><a href="#">La vital importància de les coses mínimes</a></li>
+          <li><a href="#">Bosque Blanco</a></li>
+          <li><a href="#">Movimientos artísticos</a></li>
+          <li><a href="#">La Fundación La Caixa muestra en Tarragona sus últimas adquisiciones</a></li>
+          <li><a href="#">Las pequeñas y grandes dudas de Almirall</a></li>
+          <li><a href="#">Modest Almirall</a></li>
+          <li><a href="#">Una mirada en diagonal</a></li>
+          <li><a href="#">Modest Almirall</a></li>
+          <li><a href="#">Vegetales frescos</a></li>
+        </ul>
+        <hr />
       </footer>
 
     </article>
   </div>
 
-  </div>
-  <footer class="peu">
+  <footer class="peuPagina">
     © <span id="_any_"></span> Modest Almirall
   </footer>
 

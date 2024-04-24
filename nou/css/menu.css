@@ -12,6 +12,9 @@ div.menu {
 	transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 	display: table;
 	background-color: var(--text);
+	
+	/* a veure */
+	letter-spacing: -0.04em;
 }
 
 div.menu>div {
