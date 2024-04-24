@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Semi';
+    src: url('../tipus/neutra/Neutra2Text-Demi.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fina';
+    src: url('../tipus/neutra/Neutra2Text-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normal';
+    src: url('../tipus/neutra/Neutra2Text-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
