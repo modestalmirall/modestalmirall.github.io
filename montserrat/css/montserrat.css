@@ -1,14 +1,8 @@
-@font-face {
-    font-family: 'Semi';
-    src: url('../tipus/montserrat/Montserrat-SemiBold.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Fina';
-    src: url('../tipus/montserrat/Montserrat-Light.ttf') format('opentype');
+    src: url("../tipus/Montserrat-Light.woff2") format("woff2"),
+         url("../tipus/Montserrat-Light.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,9 +10,18 @@
 
 @font-face {
     font-family: 'Normal';
-    src: url('../tipus/montserrat/Montserrat-Regular.ttf') format('opentype');
+    src: url("../tipus/Montserrat-Regular.woff2") format("woff2"),
+         url("../tipus/Montserrat-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Semi';
+    src: url("../tipus/Montserrat-Medium.woff2") format("woff2"),
+         url("../tipus/Montserrat-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
