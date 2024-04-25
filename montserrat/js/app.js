@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Masonry
-document.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Comprova si l'element '.galeria' existeix a la pàgina
   var galeria = document.querySelector('.galeria');
   if (galeria) {
