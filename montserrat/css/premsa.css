@@ -55,7 +55,7 @@
 	}
 
 	ul.premsa {
-	  font-size: 125%;
+	  font-size: 110%;
 	}
 
 	h4,
@@ -64,7 +64,7 @@
 	}
 
 	ul.premsa li {
-	  margin-bottom: .5em;
+	  margin-bottom: .3em;
 	}
 
 	ul.premsa li:last-child {
