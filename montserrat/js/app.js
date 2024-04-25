@@ -33,23 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Masonry
-/*
-document.addEventListener('DOMContentLoaded', function() {
-	// Comprova si l'element '.galeria' existeix a la pàgina
-	var galeria = document.querySelector('.galeria');
-	if (galeria) {
-		// Inicialitza Masonry només si l'element '.galeria' existeix
-		var masonry = new Masonry(galeria, {
-			// Opcions de configuració de Masonry
-			itemSelector: '.quadroGaleria',
-			columnWidth: '.quadroGaleria',
-			gutter: 20, // Espai entre les columnes
-		});
-	}
-});
-*/
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('load', function() {
   // Comprova si l'element '.galeria' existeix a la pàgina
   var galeria = document.querySelector('.galeria');
   if (galeria) {
@@ -63,18 +47,3 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
   }
 });
-
-/*
-var elem = document.querySelector('.galeria');
-var msnry = new Masonry( elem, {
-  // options
-  itemSelector: '.quadroGaleria',
-  columnWidth: 250
-});
-
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.quadroGaleria', {
-  // options
-});
-*/
