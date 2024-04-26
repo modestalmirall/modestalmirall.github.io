@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/fonsportada.css" />
   <link rel="stylesheet" href="css/barra.css" />
   <link rel="stylesheet" href="css/provisional.css" />
+  <link rel="stylesheet" href="css/llistes.css" />
+  <link rel="stylesheet" href="css/galeria.css" />
   <link rel="stylesheet" href="css/premsa.css" />
 
   <meta name="description" content="">
@@ -62,133 +64,7 @@
     </a>
   </header>
 
-  <style>
-    div.contenidor.obres {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 45px;
-    }
-
-    aside.obres {
-      width: 250px;
-    }
-
-    /*
-    article.obres {
-      flex: 1;
-    }
-*/
-    ul.llistaAnys {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-
-      font-size: 110%;
-      /* Com a premsa */
-    }
-
-    ul.llistaAnys li {
-      width: 25%;
-      /* Cada element ocupa un quart de l'amplada */
-      box-sizing: border-box;
-      /* Inclou el padding i el border en el width */
-      margin-bottom: .3em;
-      /* Com a premsa */
-    }
-
-    ul.llistaAnys li:last-child {
-      margin-bottom: 0;
-      /* Com a premsa */
-    }
-
-    ul.llistaAnys li a {
-      display: block;
-      /* padding: 10px; */
-      text-align: center;
-      text-decoration: none;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: -0.1em;
-      /*
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      */
-      /* margin: 5px; */
-    }
-  </style>
-
-  <div class="contenidor obres">
-    <aside class="obres">
-
-      <h4>Obres</h4>
-
-      <ul class="llistaAnys">
-        <li><a href="#">2016</a></li>
-        <li><a href="#">2015</a></li>
-        <li><a href="#">2014</a></li>
-        <li><a href="#">2013</a></li>
-        <li><a href="#">2012</a></li>
-        <li><a href="#">2011</a></li>
-        <li><a href="#">2010</a></li>
-        <li><a href="#">2009</a></li>
-        <li><a href="#">2008</a></li>
-        <li><a href="#">2007</a></li>
-        <li><a href="#">2006</a></li>
-        <li><a href="#">2005</a></li>
-        <li><a href="#">2004</a></li>
-        <li><a href="#">2003</a></li>
-        <li><a href="#">2002</a></li>
-        <li><a href="#">2001</a></li>
-        <li><a href="#">2000</a></li>
-        <li><a href="#">90's</a></li>
-      </ul>
-
-
-    </aside>
-
-    <style>
-      section.obres {
-        flex: 1;
-      }
-
-      /* com a premsa */
-      h1#gallery-heading {
-        font-size: 250%;
-        font-family: 'Fina';
-        color: var(--nota);
-        margin-bottom: 1em;
-        letter-spacing: -0.04em;
-        line-height: 1;
-      }
-
-      /* Estils CSS per a la galeria */
-      
-      /* https://studiosimpati.co/developer-center/responsive-masonry-layout/ */
-
-      .quadroGaleria,
-      .ampleQuadro {
-        width: 22.75%;
-      }      
-      
-      .margeQuadro {
-        width: 3%;
-      }
-      
-      .quadroGaleria {
-        margin-bottom: 3%;
-      }
-      
-      .quadroGaleria--width2 {
-        width: 48.5%;
-      }
-      
-      .quadroGaleria img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-
+  <div class="contenidor columnes">
 
     <section class="obres" role="group" aria-labelledby="gallery-heading">
 
@@ -244,6 +120,30 @@
         </div>
       </div>
     </section>
+
+    <aside class="columnes">
+      <h4>Obres</h4>
+      <ul class="llistaAnys">
+        <li><a href="#">2016</a></li>
+        <li><a href="#">2015</a></li>
+        <li><a href="#">2014</a></li>
+        <li><a href="#">2013</a></li>
+        <li><a href="#">2012</a></li>
+        <li><a href="#">2011</a></li>
+        <li><a href="#">2010</a></li>
+        <li><a href="#">2009</a></li>
+        <li><a href="#">2008</a></li>
+        <li><a href="#">2007</a></li>
+        <li><a href="#">2006</a></li>
+        <li><a href="#">2005</a></li>
+        <li><a href="#">2004</a></li>
+        <li><a href="#">2003</a></li>
+        <li><a href="#">2002</a></li>
+        <li><a href="#">2001</a></li>
+        <li><a href="#">2000</a></li>
+        <li><a href="#">90's</a></li>
+      </ul>
+    </aside>
   </div>
 
   <footer class="peuPagina">

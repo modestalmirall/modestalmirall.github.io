@@ -1,0 +1,33 @@
+/* Estils CSS per a la galeria */
+
+.quadroGaleria,
+.ampleQuadro {
+  width: 22.75%;
+}
+
+.margeQuadro {
+  width: 3%;
+}
+
+.quadroGaleria {
+  margin-bottom: 3%;
+}
+
+.quadroGaleria--width2 {
+  width: 48.5%;
+}
+
+.quadroGaleria img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background-color: var(--fons);
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: scale(1);
+}
+
+.quadroGaleria:hover img {
+  opacity: 0.75;
+  transform: scale(1.03);
+}

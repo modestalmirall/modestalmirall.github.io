@@ -1,72 +1,35 @@
-	article.premsa {
-	  width: 61.8%;
-	  margin: 0 auto;
-	}
+article.premsa section.info p {
+  font-size: 90%;
+  padding: 0;
+}
 
-	article.premsa h1 {
-	  font-size: 250%;
-	  font-family: 'Fina';
-	  color: var(--nota);
-	  margin-bottom: 1em;
-	  letter-spacing: -0.04em;
-	  line-height: 1;
-	}
+article.premsa section.contingut {
+  column-count: 3;
+  column-gap: 45px;
+}
 
-	article.premsa section.info p {
-	  font-size: 90%;
-	  padding: 0;
-	}
+article.premsa section.contingut p {
+  font-size: 100%;
+  padding-bottom: 1.5em;
+}
 
-	article.premsa section.contingut {
-	  column-count: 2;
-	  column-gap: 45px;
-	}
+p.autor {
+  font-family: 'Semi';
+}
 
-	article.premsa section.contingut p {
-	  font-size: 100%;
-	  padding-bottom: 1.5em;
-	}
+p.mitja {
+  text-transform: uppercase;
+}
 
-	p.autor {
-	  font-family: 'Semi';
-	}
+article.premsa hr {
+  display: block;
+  width: 100%%;
+  margin: 40px auto;
+  height: 1px;
+  border-top: 1px solid #ccc;
+}
 
-	p.mitja {
-	  text-transform: uppercase;
-	}
-
-	article.premsa hr {
-	  display: block;
-	  width: 100%%;
-	  margin: 40px auto;
-	  height: 1px;
-	  border-top: 1px solid #ccc;
-	}
-
-	img.motiuPremsa {
-	  width: 100%;
-	  height: auto;
-	}
-
-	h4 {
-	  color: var(--nota);
-	  font-size: 160%;
-	  margin-bottom: 1em;
-	}
-
-	ul.premsa {
-	  font-size: 110%;
-	}
-
-	h4,
-	ul.premsa {
-	  letter-spacing: -0.04em;
-	}
-
-	ul.premsa li {
-	  margin-bottom: .3em;
-	}
-
-	ul.premsa li:last-child {
-	  margin-bottom: 0;
-	}
+img.motiuPremsa {
+  width: 100%;
+  height: auto;
+}
