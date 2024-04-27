@@ -1,8 +1,8 @@
    :root {
-   	--fons: #fff;
-   	--text: #222;
-   	--gris: #888;
-   	--nota: #f60;
+     --fons: #fff;
+     --text: #222;
+     --gris: #888;
+     --nota: #f60;
    }
 
    /*
@@ -12,64 +12,62 @@ html {
 */
 
    body {
-   	background-color: var(--fons);
-   	font: normal normal 13px/1.5 'Normal';
-   	color: var(--text);
+     background-color: var(--fons);
+     font: normal normal 13px/1.5 'Normal';
+     color: var(--text);
 
-   	display: flex;
-   	flex-direction: column;
-   	gap: 50px;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
    }
 
    header.capPagina {
-   	min-height: 120px;
-   	padding: 0 45px;
-   	display: flex;
-   	align-items: center;
+     min-height: 120px;
+     padding: 0 45px;
+     display: flex;
+     align-items: center;
+   }
+
+   div.contenidor {
+     padding: 0 45px;
+     flex: 1;
+   }
+
+   footer.peuPagina {
+     color: var(--gris);
+     padding: 0 45px 30px;
    }
 
    a svg.monograma {
-   	height: 30px;
-   	width: auto;
+     height: 30px;
+     width: auto;
    }
 
    a svg.monograma path.inicialM {
-   	fill: var(--text);
+     fill: var(--text);
    }
 
    a svg.monograma path.inicialA {
-   	fill: var(--nota);
+     fill: var(--nota);
    }
 
    a:hover svg.monograma path.inicialM,
    a:hover svg.monograma path.inicialA {
-   	fill: var(--gris);
-   	transition: all .3s ease;
+     fill: var(--gris);
+     transition: all .3s ease;
    }
 
-   /* header, */
-   div.contenidor,
-   footer.peuPagina {
-   	padding: 33px 45px;
-   }
 
-   div.contenidor {
-   	flex: 1;
-   }
 
-   footer.peuPagina {
-   	color: var(--gris);
-   }
-   
    a {
      color: var(--gris);
      transition: all .3s ease;
    }
-   
+
    a:hover {
      color: var(--text);
    }
-   
+
    h1 {
      font-size: 250%;
      font-family: 'Fina';
@@ -78,7 +76,7 @@ html {
      letter-spacing: -0.04em;
      line-height: 1;
    }
-   
+
    h4 {
      color: var(--nota);
      font-size: 160%;
@@ -86,27 +84,28 @@ html {
      text-transform: lowercase;
      letter-spacing: -0.04em;
    }
-   
+
    /* per a polir */
-   
-   h1, h4 {
+
+   h1,
+   h4 {
      margin-bottom: 32.5px;
    }
-   
+
    /* Estructura */
-   
+
    div.contenidor.columnes {
      display: flex;
      flex-direction: row;
      /* gap: 45px; */
      gap: 90px;
    }
-   
+
    article.premsa,
    section.obres {
      flex: 1;
    }
-   
+
    aside.columnes {
      width: 250px;
    }

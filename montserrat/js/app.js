@@ -1,74 +1,74 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Menú
-    document.querySelector('.boto').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.documentElement.classList.toggle('menu');
-        document.documentElement.classList.toggle('nomenu');
-    });
+  // Menú
+  document.querySelector('.boto').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.documentElement.classList.toggle('menu');
+    document.documentElement.classList.toggle('nomenu');
+  });
 
-    // Any
-    document.getElementById("_any_").innerHTML = new Date().getFullYear();
+  // Any
+  document.getElementById("_any_").innerHTML = new Date().getFullYear();
 
-    // Slider
-    let currentImageIndex = 0;
-    const images = document.querySelectorAll('.fonsPortada img');
+  // Slider
+  let currentImageIndex = 0;
+  const images = document.querySelectorAll('.fonsPortada img');
 
-    // Comprova si l'element .fonsPortada existeix abans de continuar
-    if (images.length > 0) {
-        const totalImages = images.length;
+  // Comprova si l'element .fonsPortada existeix abans de continuar
+  if (images.length > 0) {
+    const totalImages = images.length;
 
-        function showNextImage() {
-            const currentImage = images[currentImageIndex];
-            currentImage.style.opacity = '0';
+    function showNextImage() {
+      const currentImage = images[currentImageIndex];
+      currentImage.style.opacity = '0';
 
-            currentImageIndex = (currentImageIndex + 1) % totalImages;
+      currentImageIndex = (currentImageIndex + 1) % totalImages;
 
-            const nextImage = images[currentImageIndex];
-            nextImage.style.opacity = '1';
-        }
-
-        // Inicia el bucle per canviar les imatges cada 5 segons (5000 ms)
-        setInterval(showNextImage, 3000);
+      const nextImage = images[currentImageIndex];
+      nextImage.style.opacity = '1';
     }
 
-    // Masonry
-    var galeria = document.querySelector('.galeria');
-    if (galeria) {
-        // Utilitzo imagesLoaded per assegurar-me que les imatges s'hagin carregat abans de inicialitzar Masonry
-        imagesLoaded(galeria, function() {
-            function initializeMasonry() {
-                // Obtenir l'amplada total del contenidor de la galeria
-                var ampladaGaleria = galeria.offsetWidth;
+    // Inicia el bucle per canviar les imatges cada 3 segons (3000 ms)
+    setInterval(showNextImage, 3000);
+  }
 
-                // Calcular el gutter en píxels utilitzant el valor percentual definit
-                var gutterPercentatge = 3; // Assumeixo que ja tens això definit com 3%
-                var gutterPixels = (gutterPercentatge / 100) * ampladaGaleria;
+  // Masonry
+  var galeria = document.querySelector('.galeria');
+  if (galeria) {
+    // Utilitzo imagesLoaded per assegurar-me que les imatges s'hagin carregat abans de inicialitzar Masonry
+    imagesLoaded(galeria, function() {
+      function initializeMasonry() {
+        // Obtenir l'amplada total del contenidor de la galeria
+        var ampladaGaleria = galeria.offsetWidth;
 
-                // Utilitzar el valor de gutterPixels com a margin-bottom pels elements de la galeria
-                var quadresGaleria = document.querySelectorAll('.quadroGaleria');
-                quadresGaleria.forEach(function(quadre) {
-                    quadre.style.marginBottom = gutterPixels + 'px';
-                });
+        // Calcular el gutter en píxels utilitzant el valor percentual definit
+        var gutterPercentatge = 3;
+        var gutterPixels = (gutterPercentatge / 100) * ampladaGaleria;
 
-                var masonry = new Masonry(galeria, {
-                    // Opcions de configuració de Masonry
-                    itemSelector: '.quadroGaleria',
-                    columnWidth: '.ampleQuadro',
-                    gutter: '.margeQuadro',
-                    percentPosition: true
-                });
-
-                // Força Masonry a recalcular la disposició dels elements
-                masonry.layout();
-            }
-
-            // Inicialitza Masonry al carregar la pàgina
-            initializeMasonry();
-
-            // Recalcula Masonry quan l'ample de la pàgina canvia
-            window.addEventListener('resize', initializeMasonry);
+        // Utilitzar el valor de gutterPixels com a margin-bottom pels elements de la galeria
+        var quadresGaleria = document.querySelectorAll('.quadroGaleria');
+        quadresGaleria.forEach(function(quadre) {
+          quadre.style.marginBottom = gutterPixels + 'px';
         });
-    }
+
+        var masonry = new Masonry(galeria, {
+          // Opcions de configuració de Masonry
+          itemSelector: '.quadroGaleria',
+          columnWidth: '.ampleQuadro',
+          gutter: '.margeQuadro',
+          percentPosition: true
+        });
+
+        // Força Masonry a recalcular la disposició dels elements
+        masonry.layout();
+      }
+
+      // Inicialitza Masonry al carregar la pàgina
+      initializeMasonry();
+
+      // Recalcula Masonry quan l'ample de la pàgina canvia
+      window.addEventListener('resize', initializeMasonry);
+    });
+  }
 });
 
 
