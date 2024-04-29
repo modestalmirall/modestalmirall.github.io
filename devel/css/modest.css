@@ -17,7 +17,8 @@
 
 :root {
   --fons: #fff;
-  --text: #222;
+  /* --text: #222; */
+  --text: #0D0D0D;
   --gris: #888;
   --nota: #f60;
   --midaTipus: 14px; /* Montserrat era 13px */
