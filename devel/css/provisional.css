@@ -1,0 +1,101 @@
+   body {
+     
+     background-color: var(--fons);
+     /*
+     font: normal normal 13px/1.5 'Normal';
+     color: var(--text);
+     */
+
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+   }
+
+   header.capPagina {
+     min-height: 120px;
+     padding: 0 45px;
+     display: flex;
+     align-items: center;
+   }
+
+   div.contenidor {
+     padding: 0 45px;
+     flex: 1;
+   }
+
+   footer.peuPagina {
+     color: var(--gris);
+     padding: 0 45px 30px;
+   }
+
+   a svg.monograma {
+     height: 30px;
+     width: auto;
+   }
+
+   a svg.monograma path.inicialM {
+     fill: var(--text);
+   }
+
+   a svg.monograma path.inicialA {
+     fill: var(--nota);
+   }
+
+   a:hover svg.monograma path.inicialM,
+   a:hover svg.monograma path.inicialA {
+     fill: var(--gris);
+     transition: all .3s ease;
+   }
+
+
+
+   a {
+     color: var(--gris);
+     transition: all .3s ease;
+   }
+
+   a:hover {
+     color: var(--text);
+   }
+
+   h1 {
+     font-size: 250%;
+     font-family: 'Fina';
+     color: var(--nota);
+     margin-bottom: 1em;
+     letter-spacing: -0.04em;
+     line-height: 1;
+   }
+
+   h4 {
+     color: var(--nota);
+     font-size: 160%;
+     margin-bottom: 1em;
+     text-transform: lowercase;
+     letter-spacing: -0.04em;
+   }
+
+   /* per a polir */
+
+   h1,
+   h4 {
+     margin-bottom: 32.5px;
+   }
+
+   /* Estructura */
+
+   div.contenidor.columnes {
+     display: flex;
+     flex-direction: row;
+     /* gap: 45px; */
+     gap: 90px;
+   }
+
+   article.premsa,
+   section.obres {
+     flex: 1;
+   }
+
+   aside.columnes {
+     width: 250px;
+   }

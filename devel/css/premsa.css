@@ -1,0 +1,35 @@
+article.premsa section.info p {
+  font-size: 90%;
+  padding: 0;
+}
+
+article.premsa section.contingut {
+  column-count: 3;
+  column-gap: 45px;
+}
+
+article.premsa section.contingut p {
+  font-size: 100%;
+  padding-bottom: 1.5em;
+}
+
+p.autor {
+  font-family: 'Semi';
+}
+
+p.mitja {
+  text-transform: uppercase;
+}
+
+article.premsa hr {
+  display: block;
+  width: 100%%;
+  margin: 40px auto;
+  height: 1px;
+  border-top: 1px solid #ccc;
+}
+
+img.motiuPremsa {
+  width: 100%;
+  height: auto;
+}

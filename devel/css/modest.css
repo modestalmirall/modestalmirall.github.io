@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+
+/* @import url("montserrat.css"); */
+@import url("newhero.css");
+@import url("reset.css");
+@import url("provisional.css");
+@import url("boto.css");
+@import url("menu.css");
+@import url("fonsportada.css");
+@import url("barra.css");
+@import url("llistes.css");
+@import url("galeria.css");
+@import url("premsa.css");
+@import url("icones.css");
+
+:root {
+  --fons: #fff;
+  --text: #222;
+  --gris: #888;
+  --nota: #f60;
+  --midaTipus: 14px; /* Montserrat era 13px */
+  --altLinia: 1.6;   /* Montserrat era 1.5 */
+}
+
+html {
+  font-family: 'Normal';
+  font-size: var(--midaTipus);
+  line-height: var(--altLinia);
+  color: var(--text);
+  overflow-y: scroll;
+}

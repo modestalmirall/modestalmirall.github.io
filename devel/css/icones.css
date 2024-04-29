@@ -1,0 +1,33 @@
+.icona {
+	width: calc(var(--midaTipus) * var(--altLinia) * .9);
+	height: calc(var(--midaTipus) * var(--altLinia) * .9);
+}
+
+
+div.navLateral a .icona {
+	fill: var(--text);
+	transition: all .3s ease;
+}
+
+div.navLateral a:hover .icona {
+	fill: var(--gris);
+}
+
+
+div.navLateral {
+	width: 100%;
+}
+
+div.navLateral,
+div.embolcallComptador {
+	display: inline-flex;
+}
+
+div.navLateral {
+	justify-content: space-between;
+}
+
+div.comptador {
+	width: 8em;
+	text-align: center;
+}

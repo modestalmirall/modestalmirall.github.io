@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: 'Fina';
+    src: url("../tipus/NewHeroFina.woff2") format("woff2"),
+         url("../tipus/NewHeroFina.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normal';
+    src: url("../tipus/NewHeroNormal.woff2") format("woff2"),
+         url("../tipus/NewHeroNormal.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Semi';
+    src: url("../tipus/NewHeroSemi.woff2") format("woff2"),
+         url("../tipus/NewHeroSemi.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

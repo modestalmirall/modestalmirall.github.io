@@ -1,0 +1,43 @@
+/* Llistes */
+
+/* De moment la llista de premsa se n'ha anat
+   a prendre pel cul 
+*/
+
+
+ul.premsa,
+ul.llistaAnys {
+	font-family: 'Semi';
+	font-size: 120%;
+}
+
+ul.premsa {
+	letter-spacing: -0.04em;
+}
+
+ul.premsa li,
+ul.llistaAnys li {
+	line-height: 1.3;
+	margin-bottom: .5em;
+}
+
+ul.premsa li:last-child,
+ul.llistaAnys li:last-child {
+	margin-bottom: 0;
+}
+
+ul.llistaAnys {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul.llistaAnys li {
+	width: 20%;
+}
+
+ul.llistaAnys li a {
+	display: block;
+	text-decoration: none;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -0.1em;
+}
