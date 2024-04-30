@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var galeria = document.querySelector('.galeria');
   if (galeria) {
     // Amaga l'element amb la classe "galeria"
-    galeria.style.display = "none";
+    galeria.style.visibility = "hidden";
 
     // Utilitzo imagesLoaded per assegurar-me que les imatges s'hagin carregat abans de inicialitzar Masonry
     imagesLoaded(galeria, function() {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
       initializeMasonry();
 
       // Torna a mostrar l'element quan la pàgina carrega completament
-      galeria.style.display = "block";
+      galeria.style.visibility = "visible";
 
       // Recalcula Masonry quan l'ample de la pàgina canvia
       window.addEventListener('resize', initializeMasonry);
