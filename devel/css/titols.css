@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--nota);
+	line-height: 1;
+}
+
+h1 {
+	font-size: 250%;
+	font-family: 'Fina';
+	margin-bottom: 1em;
+	letter-spacing: -0.04em;
+}
+
+h2 {
+	font-size: 150%;
+	font-family: 'Normal';
+	margin-bottom: 1em;
+	letter-spacing: -0.04em;
+}
+
+h4 {
+	font-size: 160%;
+	margin-bottom: 1em;
+	text-transform: lowercase;
+	/*letter-spacing: -0.03em; */
+	letter-spacing: 0.2em;
+}
+
+h1,
+h4 {
+	margin-bottom: 32.5px;
+}
