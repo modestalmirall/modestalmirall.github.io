@@ -1,11 +1,3 @@
-document.onreadystatechange = function() {
-  if (document.readyState !== "complete") {
-      document.querySelector("body").style.visibility = "hidden";
-  } else {
-      document.querySelector("body").style.visibility = "visible";
-  }
-};
-
 document.addEventListener('DOMContentLoaded', function() {
   // Menú
   document.querySelector('.boto').addEventListener('click', function(e) {
@@ -42,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Masonry
   var galeria = document.querySelector('.galeria');
   if (galeria) {
-      // Amaga l'element amb la classe "galeria"
       document.querySelector("body").style.visibility = "hidden";
 
       // Utilitzo imagesLoaded per assegurar-me que les imatges s'hagin carregat abans de inicialitzar Masonry
